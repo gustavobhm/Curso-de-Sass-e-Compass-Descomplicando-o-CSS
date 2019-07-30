@@ -37,6 +37,13 @@ header .container {
   font-size: 1.2em;
   font-weight: lighter;
 
+  @media #{$mq-mobile} {
+    position: static;
+    display: block;
+    text-align: center;
+    width: auto;
+  }
+
   ul {
     padding-left: 0;
   }
@@ -44,14 +51,19 @@ header .container {
   li {
     display: inline-block;
     width: 5em;
+
+    @media #{$mq-mobile} {
+      margin: 0.4em;
+      width: auto;
+    }
   }
 
   a {
     color: white;
     text-decoration: none;
+  }
 
-    &:hover {
-      text-decoration: underline;
-    }
+  a:hover {
+    text-decoration: underline;
   }
 }
