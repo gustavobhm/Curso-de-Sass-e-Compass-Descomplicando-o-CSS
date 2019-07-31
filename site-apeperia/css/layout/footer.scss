@@ -16,7 +16,7 @@ footer {
     z-index: -1;
   }
   
-  footer::before {
+  footer::before { 
     content: "";
     background: $cor-auxiliar;
     top: 0;
@@ -28,8 +28,8 @@ footer {
   }
   
   footer .container {
-    padding-top: 3em;
-    height: 6.5em;
+    padding-top: multiplica-pela-fonte(3);
+    height: multiplica-pela-fonte(6.5);
     position: relative;
   }
   
